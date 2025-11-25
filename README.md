@@ -1,5 +1,7 @@
-# makemore
-Toy autoregressive character-level language model
+# bigram
+
+Bigram character-level language model
+
 
 ## running the notebook
 
