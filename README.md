@@ -4,7 +4,7 @@ Toy autoregressive character-level language model
 ## running the notebook
 
 ```bash
-uv run --with jupyter jupyter notebook
+uv run --with jupyter --with torch --with matplotlib jupyter notebook
 ```
 
 ## resources
