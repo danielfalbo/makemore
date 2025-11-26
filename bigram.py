@@ -279,9 +279,14 @@ for k in range(EPOCHS):
     # we want to apply smoothing and take the safety measure with our NN
     # as well. now the weights of the neural network just represent the
     # log count of occurrences, which you can think of like a log
-    # occurrences matrix. we normalize by adding to the mean nll
-    # the average of the log counts squared, scaled down based on how much
-    # smoothing we want to apply.
+    # occurrences matrix. so we could've added 1 to the counts
+    # after exp-ing the model weights and achieve something almost
+    # exactly equal to the occurrences matrix normalization. but we can
+    # do something more general and more powerful with the neural network.
+    # we normalize by adding to the mean nll loss the average of the log counts
+    # squared, scaled down based on how much smoothing we want to apply.
+    # this is called L2 Regularization or Weight Decay and also acts as a
+    # spring or gravity pulling weights toward zero as we follow the gradient.
     loss = (
         -probs[torch.arange(xs.shape[0]), ys].log().mean()
             + 0.01*(W**2).mean()
