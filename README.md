@@ -9,6 +9,12 @@ Bigram character-level language model
 uv run --with jupyter --with torch --with matplotlib jupyter notebook
 ```
 
+## running the script
+
+```bash
+uv run --with numpy --with torch bigram.py
+```
+
 ## resources
 
 1. ["The spelled-out intro to language modeling: building makemore" by Karpathy](https://youtu.be/PaCmpygFfXo)
