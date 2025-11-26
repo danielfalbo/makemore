@@ -1,6 +1,6 @@
-# bigram
+# n-gram
 
-Bigram character-level language model
+N-gram character-level language model
 
 
 ## running the notebook

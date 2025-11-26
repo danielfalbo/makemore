@@ -322,26 +322,3 @@ for _ in range(5):
         print(itos[ix], end='')
         if ix == 0: break
     print()
-
-# # E01: train a trigram language model,
-# # i.e. take two characters as an input to predict the 3rd one.
-# # Feel free to use either counting or a neural net.
-# # Evaluate the loss; Did it improve over a bigram model?
-#
-# # E02: split up the dataset randomly into
-# # 80% train set, 10% dev set, 10% test set.
-# # Train the bigram and trigram models only on the training set.
-# # Evaluate them on dev and test splits. What can you see?
-#
-# # E03: use the dev set to tune the strength of smoothing (or regularization)
-# # for the trigram model - i.e. try many possibilities and see which one
-# # works best based on the dev set loss. What patterns can you see in the
-# # train and dev set loss as you tune this strength?
-# # Take the best setting of the smoothing and evaluate on the test set
-# # once and at the end. How good of a loss do you achieve?
-#
-# # E05: look up and use F.cross_entropy instead.
-# # You should achieve the same result.
-# # Can you think of why we'd prefer to use F.cross_entropy instead?
-#
-# # E06: meta-exercise! Think of a fun/interesting exercise and complete it.
